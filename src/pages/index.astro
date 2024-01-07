@@ -1,14 +1,19 @@
+---
+import "../styles/global.css";
+const title = "Home";
+---
+
 <!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Kch init Astro site</title>
+    <title>Kch - {title}</title>
   </head>
   <body>
-	<a href="/">Home</a>
-	<a href="/about">About</a>
-	<a href="/blog">Blog</a>
+    <a href="/">{title}</a>
+    <a href="/about">About Me</a>
+    <a href="/blog">Blog</a>
     <h1>My First Astro Site !!!</h1>
   </body>
 </html>
