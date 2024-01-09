@@ -1,6 +1,6 @@
 ---
 import "../styles/global.css";
-import Navigation from "../components/Navigation.astro";
+import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 const title = "Home";
 ---
@@ -13,8 +13,9 @@ const title = "Home";
     <title>Kch - {title}</title>
   </head>
   <body>
-    <Navigation />
+    <Header />
     <h1>My First Astro Site !!!</h1>
     <Footer />
+    <script src="../scripts/menu.js"></script>
   </body>
 </html>
