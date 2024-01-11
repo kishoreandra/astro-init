@@ -3,6 +3,7 @@ import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 import "../styles/global.css";
 const { pageTitle } = Astro.props;
+import image from "../../public/blog-og.jpg";
 ---
 
 <html lang="en">
@@ -11,6 +12,7 @@ const { pageTitle } = Astro.props;
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
+    <meta property="og:image" content={image.src} />
     <title>{pageTitle}</title>
   </head>
   <body>
